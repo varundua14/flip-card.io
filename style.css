@@ -1,0 +1,40 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3e9e9;
+}  
+.container
+{
+    background-color:#99627A;
+    height: 800px;
+    width: 900px;
+    display: grid;
+    row-gap: 12px;
+    column-gap: 12px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 12px;
+    border: 5px solid #643843;
+}
+.item
+{
+   font-size: 100px;
+   color: aliceblue;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    background-color: #643843;
+    transition: transform 0.8s;
+  transform-style: preserve-3d;
+  
+
+}
+.item:hover
+{
+    transform: rotateY(180deg);
+    background-color: plum;
+   color: pink;
+}
